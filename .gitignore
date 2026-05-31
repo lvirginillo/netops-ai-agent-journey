@@ -1,0 +1,28 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Private notes (gitignored — for local study only)
+NOTES.md
+**/NOTES.md
+apuntes/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# macOS
+.DS_Store
+
+# Docker
+*.log
+
+# IDE
+.vscode/
+.idea/
