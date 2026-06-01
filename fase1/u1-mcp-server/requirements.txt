@@ -1,0 +1,4 @@
+mcp
+netmiko
+python-dotenv
+mcp[cli]
