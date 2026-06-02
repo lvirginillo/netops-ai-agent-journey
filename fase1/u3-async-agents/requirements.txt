@@ -1,0 +1,7 @@
+mcp[cli]
+nornir
+nornir-netmiko
+nornir-utils
+netmiko
+pydantic
+python-dotenv

@@ -1,0 +1,8 @@
+# Ejemplo de inventario — credenciales se cargan desde .env via inventory_builder.py
+dist-sw01:
+  hostname: "sw01-ip"
+  platform: "cisco_nxos"
+
+dist-sw02:
+  hostname: "sw02-ip"
+  platform: "cisco_nxos"
