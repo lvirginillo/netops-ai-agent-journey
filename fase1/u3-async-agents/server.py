@@ -21,6 +21,10 @@ mcp = FastMCP("netops-server-v3")
 
 
 def get_nornir() -> Nornir:
+    """
+    Inicializa y devuelve una instancia de Nornir 
+    con la configuración de inventario.
+    """
     inventory = build_inventory()
     return Nornir(
         inventory=inventory,
@@ -33,7 +37,7 @@ def run_on_all(command: str) -> dict:
     Ejecuta un comando sobre todos los hosts en paralelo.
     Devuelve un dict: {hostname: output_string | error_string}
     """
-    nr = get_nornir()
+    nr = get_nornir() # Cada llamada a run_on_all crea una nueva instancia de Nornir para asegurar fresh state y evitar problemas de concurrencia. 
     result = nr.run(task=netmiko_send_command, command_string=command)
 
     outputs = {}
